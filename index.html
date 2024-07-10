@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97505170e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span class="Lol">Sai Rohit</span> <br>From India </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">   
+                    <h1 class="para">About Me</h1>
+                    <p>As a fourth-year Computer Science and Engineering student at VIT, Chennai, I possess a strong foundation in data structures and algorithms. Proficient in C++, Java, and Python, I am keenly interested in web development, where I aim to leverage my skills to create innovative digital solutions. With a passion for learning and a commitment to excellence, I am eager to apply my knowledge in web development to tackle real-world challenges and collaborate effectively within a dynamic team environment.</p>
+                    <div class="titles">
+                        <p class="links active1" onclick="tab('skills')">Skills</p>
+                        <p class="links" onclick="tab('education')">Education</p>
+                        <p class="links" onclick="tab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-container visible1" id="skills">
+                        <ul>
+                            <li><span>WEB DEVELOPER</span><br>Designing Web Application</li>
+                            <li><span>APP DEVELOPER</span><br>APP Application</li>
+                            <li><span>UI/UX</span><br>Designing Web Application</li>
+                        </ul>
+                    </div>
+                    <div class="tab-container" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Narayana</li>
+                            <li><span>2020</span><br>Sri Chaitanya</li>
+                            <li><span>2024</span><br>VIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-container" id="certificates"> 
+                        <ul>
+                            <li><span>2022</span><br>IIT BOMBAY</li>
+                            <li><span>2021</span><br>VIT</li>
+                            <li><span>2024</span><br>AWS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="para">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Design</h1>
+                    <p>As a fourth-year Computer Science and Engineering student at VIT, Chennai, I possess a strong foundation in
+                        data structures and algorithms. Proficient in C++, Java, and Python, I am keenly interested in web
+                        development, where I aim to leverage my skills to create innovative digital solutions.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h1>Web Design</h1>
+                    <p>As a fourth-year Computer Science and Engineering student at VIT, Chennai, I possess a strong foundation in
+                        data structures and algorithms. Proficient in C++, Java, and Python, I am keenly interested in web
+                        development, where I aim to leverage my skills to create innovative digital solutions.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h1>Web Design</h1>
+                    <p>As a fourth-year Computer Science and Engineering student at VIT, Chennai, I possess a strong foundation in
+                        data structures and algorithms. Proficient in C++, Java, and Python, I am keenly interested in web
+                        development, where I aim to leverage my skills to create innovative digital solutions.</p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--portfolio-->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="para">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png"/>
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The Social App connects you to the talented people</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png"/>
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The Social App connects you to the talented people</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png"/>
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The Social App connects you to the talented people</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                    </div>
+                </div>
+               
+
+                </div>
+                
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="para">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rohit@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 1111111111</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required/>
+                            <input type="email" name="email" placeholder="Your Mail" required/>
+                            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button> 
+
+                        </form>
+                        <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copy-right">
+            <p>Copyright @Rohit. <i class="fa-solid fa-heart"></i>Don't Copy My Answers lol</p>
+        </div>
+    </div>
+
+    <script>
+        function tab(tabname){
+            var tablinks = document.querySelectorAll('.links');
+            var contents = document.querySelectorAll('.tab-container');
+            for (var tablink of tablinks){
+                tablink.classList.remove("active1");
+            }
+            for (var content of contents){
+                content.classList.remove("visible1"); 
+            }
+            event.currentTarget.classList.add("active1");
+            document.getElementById(tabname).classList.add("visible1"); 
+        }
+    </script>
+    <script>
+        var menu=document.getElementById("sidemenu");
+        function openmenu(){
+            menu.style.right="0";
+        }
+        function closemenu(){
+            menu.style.right="-200px";
+        }
+
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzD5KJbrwPt78FQgreZ3625_o1tu1Wf6GHDHn7NWYeZP0CgCA8mqfCJ-uBkX_I-9dN8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+
+            },5000)
+            form.reset()
+        }) 
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
